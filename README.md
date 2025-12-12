@@ -1,43 +1,21 @@
-# Astro Starter Kit: Minimal
+# PARAMETR TO NIEWOLA
 
-```sh
-npm create astro@latest -- --template minimal
-```
+PARAMETR TO POKÓJ
+PARAMETR TO NIEWOLA
+IGNORANCJA TO SIŁA
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+WIELKI BRAT PATRZY
+CKE 2026
 
-## 🚀 Project Structure
+Rebeliant wykryty! Wielki Brat cię widzi.
 
-Inside of your Astro project, you'll see the following folders and files:
+## Opis projektu
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+Strona odliczająca czas do matury rozszerzonej z matematyki. Zapożyczony zmieniony cytat z roku 1984 George'a Orwella. Pomysł wywodzi się z ilości zadań z parametrem, które musimy umieć rozwiązywać. Stąd stwierdzenie "parametr to niewola". Projekt strikte hobbistyczny, mający na celu rozbawienie. Nie promuję żadnych form rebeli wobec cke.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Tyle ode mnie, wracam do zadań z parametrem.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Technologie
 
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- Astro
+- Tailwind CSS
