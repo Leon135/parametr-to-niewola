@@ -1,16 +1,142 @@
 ---
+import "../styles/global.css";
 
+import rebelImage from "../assets/rebel.png";
+import { Image } from "astro:assets";
+
+import Countdown from "../components/Countdown.jsx";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Parametr to niewola</title>
+    <meta name="description" content="Wielki brat patrzy. CKE 2026." />
+    <link rel="icon" type="image/+svg" href="/favicon.svg" />
+  </head>
+  <body
+    class="bg-black text-zinc-300 h-screen flex flex-col items-center justify-center p-4 selection:bg-red-900 selection:text-white"
+  >
+    <main class="max-w-3xl w-full text-center space-y-12">
+      <div class="space-y-4 font-mono uppercase tracking-widest">
+        <h1 class="text-2xl md:text-4xl font-black text-white glitch-effect">
+          Parametr to pokój.
+        </h1>
+        <h1 class="text-2xl md:text-4xl font-black text-red-600 glitch-effect">
+          Parametr to niewola.
+        </h1>
+        <h1 class="text-2xl md:text-4xl font-black text-white glitch-effect">
+          Ignorancja to siła.
+        </h1>
+      </div>
+
+      <Countdown client:load />
+
+      <footer class="text-xs font-mono text-zinc-700 pt-16">
+        WIELKI BRAT PATRZY • CKE 2026
+      </footer>
+    </main>
+    <div class="noise"></div>
+    <div class="scanlines"></div>
+    <div class="vignette"></div>
+  </body>
 </html>
+
+<style>
+  .noise {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    right: -50%;
+    bottom: -50%;
+    width: 200%;
+    height: 200vh;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='1'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    animation: bg-animation 0.2s infinite;
+    opacity: 0.15;
+    visibility: visible;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  @keyframes bg-animation {
+    0% {
+      transform: translate(0, 0);
+    }
+    10% {
+      transform: translate(-5%, -5%);
+    }
+    20% {
+      transform: translate(-10%, 5%);
+    }
+    30% {
+      transform: translate(5%, -10%);
+    }
+    40% {
+      transform: translate(-5%, 15%);
+    }
+    50% {
+      transform: translate(-10%, 5%);
+    }
+    60% {
+      transform: translate(15%, 0);
+    }
+    70% {
+      transform: translate(0, 10%);
+    }
+    80% {
+      transform: translate(-15%, 0);
+    }
+    90% {
+      transform: translate(10%, 5%);
+    }
+    100% {
+      transform: translate(5%, 0);
+    }
+  }
+
+  .scanlines {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0) 50%,
+      rgba(0, 0, 0, 0.3) 50%,
+      rgba(0, 0, 0, 0.3)
+    );
+    background-size: 100% 10px;
+    z-index: 20;
+    pointer-events: none;
+    animation: scanline-move 80s linear infinite;
+  }
+
+  @keyframes scanline-move {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 0 100%;
+    }
+  }
+
+  .vignette {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.6) 100%
+    );
+    z-index: 21;
+    pointer-events: none;
+  }
+</style>
