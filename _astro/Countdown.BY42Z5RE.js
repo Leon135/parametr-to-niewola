@@ -1,0 +1,9 @@
+import{r as x}from"./index.WFquGv8Z.js";var c={exports:{}},r={};/**
+ * @license React
+ * react-jsx-runtime.production.js
+ *
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */var d;function f(){if(d)return r;d=1;var a=Symbol.for("react.transitional.element"),s=Symbol.for("react.fragment");function o(i,t,e){var l=null;if(e!==void 0&&(l=""+e),t.key!==void 0&&(l=""+t.key),"key"in t){e={};for(var u in t)u!=="key"&&(e[u]=t[u])}else e=t;return t=e.ref,{$$typeof:a,type:i,key:l,ref:t!==void 0?t:null,props:e}}return r.Fragment=s,r.jsx=o,r.jsxs=o,r}var m;function p(){return m||(m=1,c.exports=f()),c.exports}var n=p();function v(){const a=new Date("2026-05-11T09:00:00").getTime(),[s,o]=x.useState(i());function i(){const t=new Date().getTime(),e=a-t;return e<=0?null:{misiące:Math.floor(e/(1e3*60*60*24*30)),dni:Math.floor(e/(1e3*60*60*24)%30),godz:Math.floor(e%(1e3*60*60*24)/(1e3*60*60)),min:Math.floor(e%(1e3*60*60)/(1e3*60)),sek:Math.floor(e%(1e3*60)/1e3)}}return x.useEffect(()=>{const t=setInterval(()=>{o(i())},1e3);return()=>clearInterval(t)},[]),s?n.jsx("div",{className:"flex flex-wrap justify-center md:grid md:grid-cols-5 gap-4 text-center mt-8 font-mono",children:Object.entries(s).map(([t,e])=>n.jsxs("div",{className:"flex flex-col p-4 border border-zinc-700 bg-zinc-900 rounded-sm w-[calc(50%-0.5rem)] md:w-auto",children:[n.jsx("span",{className:"text-4xl md:text-6xl font-bold text-white tabular-nums",children:e<10?`0${e}`:e}),n.jsx("span",{className:"text-sm text-zinc-500 uppercase tracking-widest mt-2",children:t})]},t))}):n.jsx("div",{className:"text-red-500 font-mono text-2xl",children:"KONIEC. CZAS NA REWOLUCJĘ. WIELKI BRAT PATRZY."})}export{v as default};
