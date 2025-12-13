@@ -11,7 +11,8 @@ export default function Countdown() {
     if (difference <= 0) return null;
 
     return {
-      dni: Math.floor(difference / (1000 * 60 * 60 * 24)),
+      misiące: Math.floor(difference / (1000 * 60 * 60 * 24 * 30)),
+      dni: Math.floor((difference / (1000 * 60 * 60 * 24)) % 30),
       godz: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
       min: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
       sek: Math.floor((difference % (1000 * 60)) / 1000),
@@ -33,11 +34,11 @@ export default function Countdown() {
     );
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center mt-8 font-mono">
+    <div className="flex flex-wrap justify-center md:grid md:grid-cols-5 gap-4 text-center mt-8 font-mono">
       {Object.entries(timeLeft).map(([unit, value]) => (
         <div
           key={unit}
-          className="flex flex-col p-4 border border-zinc-700 bg-zinc-900 rounded-sm"
+          className="flex flex-col p-4 border border-zinc-700 bg-zinc-900 rounded-sm w-[calc(50%-0.5rem)] md:w-auto"
         >
           <span className="text-4xl md:text-6xl font-bold text-white tabular-nums">
             {value < 10 ? `0${value}` : value}
