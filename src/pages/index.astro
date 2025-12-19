@@ -1,8 +1,7 @@
 ---
 import "../styles/global.css";
 
-import rebelImage from "../assets/rebel.png";
-import { Image } from "astro:assets";
+import { SEO } from "astro-seo";
 
 import Countdown from "../components/Countdown.jsx";
 ---
@@ -11,9 +10,22 @@ import Countdown from "../components/Countdown.jsx";
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Parametr to niewola</title>
-    <meta name="description" content="Wielki brat patrzy. CKE 2026." />
+    <SEO
+      title="Parametr to niewola"
+      description="Parametr to pokój. Parametr to niewola. Ignorancja to siła. CKE 2026. Matematyka rozszerzona."
+      openGraph={{
+        basic: {
+          title: "Parametr to niewola",
+          type: "website",
+          image: "https://parametrtoniewola.xyz/favicon.svg"
+        },
+        optional : {
+          description: "Parametr to pokój. Parametr to niewola. Ignorancja to siła. CKE 2026. Matematyka rozszerzona.",
+        }
+      }}
+    />
     <link rel="icon" type="image/+svg" href="/favicon.svg" />
+    <link rel="sitemap" href="/sitemap-index.xml"/>
   </head>
   <body
     class="bg-black text-zinc-300 h-screen flex flex-col items-center justify-center p-4 selection:bg-red-900 selection:text-white"

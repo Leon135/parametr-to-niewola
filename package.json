@@ -11,9 +11,11 @@
   },
   "dependencies": {
     "@astrojs/react": "^4.4.2",
+    "@astrojs/sitemap": "^3.6.0",
     "@tailwindcss/postcss": "^4.1.18",
     "@tailwindcss/vite": "^4.1.18",
     "astro": "^5.16.5",
+    "astro-seo": "^0.8.4",
     "autoprefixer": "^10.4.22",
     "gh-pages": "^6.3.0",
     "tailwindcss": "^4.1.18"
