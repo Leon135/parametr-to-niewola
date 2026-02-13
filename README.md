@@ -52,3 +52,11 @@ The project attempts to capture the atmosphere of dystopian surveillance while a
 Nah, I ain't explaining that.
 
 Git clone, npm run dev, typical... In other wors I haven't added anything more.
+
+## License
+
+MIT
+
+---
+
+**Built with 💀📐 by [Leon135](https://leon135.xyz)**
