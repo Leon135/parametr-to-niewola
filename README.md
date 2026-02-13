@@ -38,6 +38,7 @@ The project attempts to capture the atmosphere of dystopian surveillance while a
 [Visit the rebel here](https://parametrtoniewola.xyz)
 
 ## Screenshots
+
 ![Website](screenshots/parametr-to-niewola.png)
 
 ## Built with
