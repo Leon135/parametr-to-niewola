@@ -43,8 +43,8 @@ The project attempts to capture the atmosphere of dystopian surveillance while a
 
 ## Built with
 
-- **Astro**
-- **Tailwind CSS**
+- [Astro](https://astro.build/) - Static site generator
+- [Tailwind CSS](https://tailwindcss.com/) - Modular CSS framework
 - **Pure JavaScript**
 
 ## Installation
