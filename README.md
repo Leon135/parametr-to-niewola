@@ -55,7 +55,9 @@ Git clone, npm run dev, typical... In other wors I haven't added anything more.
 
 ## License
 
-MIT
+This project is licensed under the MIT License. 
+
+See [LICENSE](LICENSE) for details.
 
 ---
 
